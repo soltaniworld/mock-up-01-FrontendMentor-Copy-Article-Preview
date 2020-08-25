@@ -1,8 +1,27 @@
 body {
   color: red;
-  background: red;
+  font-size: 13px;
 }
 
-.main {
+main {
   display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 730px;
+  height: 280px;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.content-footer {
+  height: 30px;
+  background-color: green;
 }

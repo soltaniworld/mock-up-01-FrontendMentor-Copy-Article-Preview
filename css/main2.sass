@@ -1,28 +1,118 @@
-$VeryDarkBlue: hsl(217, 19%, 35%)
-$DarkBlue: hsl(214, 17%, 51%)
-$GrayishBlue: hsl(212, 23%, 69%)
-$LightGrayishBlue: hsl(210, 46%, 95%)
-%footerWidth: 30px
+$VeryDarkBlue: hsl(217, 19%, 35%) //title, name, active-share-background #48556A
+$DarkBlue: hsl(214, 17%, 51%) //text, share-circle #6E8098
+$GrayishBlue: hsl(212, 23%, 69%) //date, ACTIVE-"share" #9DAEC2
+$LightGrayishBlue: hsl(210, 46%, 95%) //Background, outer fill of share button 
+
+//set all margins and paddings to 0
+*
+    margin: 0
+    padding: 0
+
+//set all visited sites to white
+a:visited, a
+    color: white
 
 body
-    color: red
     font-size: 13px
+    font-family: 'Manrope', sans-serif
+    font-weight: 500
+
+// contains the main card, excluding the bottom credits footer
 main
     display: flex
     justify-content: center
-    align-content: center
-    // overflow: hidden;
+    align-items: center
+    overflow: hidden
     height: 100vh
     width: 100vw
+    border: 1px red #000
+    background-color: $LightGrayishBlue
+    z-index: 1
 
+// includes image, title, para, and all other card info
 .card
     position: absolute
     display: flex
+    background-color: #fff
+    //Desktop
     flex-direction: row
     width: 730px
     height: 280px
-    border: 1px solid #000
     overflow: hidden
+    border-radius: 10px
+    z-index: 2
 
+    &-image
+        background: url("../images/drawers.jpg") no-repeat bottom left
+        background-size: cover
+        // Desktop
+        width: 285px
+        height: 100%
+    &-content
+        padding: 32px 40px 0 40px
+        width: 365px
+        
+    &-title
+        color: $VeryDarkBlue
+        line-height: 28px
+        letter-spacing: 0.25px
+        font-size: 20px
+        font-weight: 700
+    &-text
+        margin-top: 12px
+        color: $DarkBlue
+        line-height: 20px
+        letter-spacing: 0.12px
+
+    &-footer
+        display: grid
+        grid-template-columns: 40px 1fr 32px
+        align-items: center
+        width: 100%
+        margin: 20px auto
+        &-image
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            overflow: hidden
+            img
+                width: inherit
+        &-info
+            margin-left: 16px
+            line-height: 20px
+            letter-spacing: 0.12px
+            text-align: left
+            p:first-child
+                color: $VeryDarkBlue
+            p:last-child
+                color: $GrayishBlue
+        &-share
+            $ShareHeightWidth: 32px  //set this variable one time, it changes everywhere
+            background-color: $LightGrayishBlue
+            height: $ShareHeightWidth
+            width: $ShareHeightWidth
+            border-radius: 50%
+            //align the share icon in middle of circle
+            i
+                line-height: $ShareHeightWidth
+                width: 100%
+                text-align: center //only works if the width covers the entire container
+                color: $DarkBlue
+                display: inline-block
+
+
+// This is the hidden social media buttons
 .content-footer
-    position: relative
+    //add stuff
+    background-color: $DarkBlue
+    z-index: 4
+    display: none  //DELETE
+
+.attribution
+    background-color: #abc
+    position: absolute  //positioned relative to the containing block
+    text-align: center
+    bottom: 0px
+    z-index: 3
+    width: 100%
+    height: 20px
