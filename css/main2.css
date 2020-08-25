@@ -1,0 +1,31 @@
+body {
+  color: red;
+  font-size: 13px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  position: absolute;
+  width: 730px;
+  height: 280px;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.content-footer {
+  position: relative;
+}
+/*# sourceMappingURL=main2.css.map */

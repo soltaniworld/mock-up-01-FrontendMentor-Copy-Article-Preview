@@ -1,0 +1,8 @@
+body {
+  color: red;
+  background: red;
+}
+
+.main {
+  display: flex;
+}

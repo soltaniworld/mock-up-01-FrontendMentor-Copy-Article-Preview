@@ -37,6 +37,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 260px;
 }
 .card .card-content .card-title {
   color: #48556a;
@@ -45,7 +46,7 @@ main {
   letter-spacing: 0.4px;
   line-height: 20px;
   margin-top: 40px;
-  width: 260px;
+  /* width: 260px; */
 }
 .card .card-content .card-text {
   color: #8a939c;
@@ -53,7 +54,7 @@ main {
   letter-spacing: 0.4px;
   line-height: 20px;
   margin-top: 20px;
-  width: 260px;
+  /* width: 260px; */
 }
 .card .card-footer {
   display: grid;
@@ -61,7 +62,7 @@ main {
   margin: 0 auto;
   margin-top: 30px;
   padding-bottom: 20px;
-  width: 260px;
+  /* width: 260px; */
 }
 .card .card-footer .card-footer-image {
   width: 40px;
@@ -163,18 +164,22 @@ main {
   }
   .card .card-content {
     margin: 0 auto;
+    width: 290px;
   }
   .card .card-content .card-title {
     margin-top: 30px;
-    width: 290px;
+    /* width: 290px; */
+    width: 100%;
   }
   .card .card-content .card-text {
     margin-top: 15px;
-    width: 290px;
+    /* width: 290px; */
+    width: 100%;
   }
   .card .card-footer {
     margin-top: 20px;
-    width: 290px;
+    /* width: 290px; */
+    width: 100%;
   }
   .card .card-footer .card-footer-info {
     letter-spacing: 0.4px;
