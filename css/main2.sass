@@ -103,10 +103,47 @@ main
 
 // This is the hidden social media buttons
 .content-footer
-    //add stuff
-    background-color: $DarkBlue
+    position: relative
+    background-color: $VeryDarkBlue
     z-index: 4
     display: none  //DELETE
+    //Desktop
+    $width: 248px
+    $height: 55px
+    width: $width
+    height: $height
+    border-radius: 10px
+    top: (280px / 2) - 12px - ($height / 2) - 32px - 36px - 15.29px
+    // top: $height / 2
+    left: (730px / 2) - 40px - (32px / 2)
+    //display: flex
+    justify-content: center
+    align-items: center
+    &:after
+        position: absolute
+        bottom: -12px
+        content: ""
+        border-top: 12px solid $VeryDarkBlue
+        border-left: 12px solid transparent
+        border-right: 12px solid transparent
+
+
+    .social-media
+        width: 175px
+        height: 20px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: auto
+    span 
+        color: $DarkBlue
+        line-height: 20px
+        letter-spacing: 5px
+    .card-footer-share
+        display: none
+    
+.active
+    display: flex
 
 .attribution
     background-color: #abc

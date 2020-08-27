@@ -129,9 +129,61 @@ main {
 }
 
 .content-footer {
-  background-color: #6d7f97;
+  position: relative;
+  background-color: #48556a;
   z-index: 4;
   display: none;
+  width: 248px;
+  height: 55px;
+  border-radius: 10px;
+  top: 17.21px;
+  left: 309px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-footer:after {
+  position: absolute;
+  bottom: -12px;
+  content: "";
+  border-top: 12px solid #48556a;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+
+.content-footer .social-media {
+  width: 175px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.content-footer span {
+  color: #6d7f97;
+  line-height: 20px;
+  letter-spacing: 5px;
+}
+
+.content-footer .card-footer-share {
+  display: none;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .attribution {
