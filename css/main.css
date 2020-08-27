@@ -79,6 +79,7 @@ main {
     background: url("../images/drawers.jpg") no-repeat bottom left cover;
     width: 285px;
     height: 100%;
+    background-position: 0;
   }
 }
 
