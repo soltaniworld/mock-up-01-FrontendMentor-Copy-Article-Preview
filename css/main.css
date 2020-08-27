@@ -76,7 +76,7 @@ main {
 
 @media screen and (min-width: 500px) {
   .card-image {
-    background: url("../images/drawers.jpg") no-repeat bottom left;
+    background: url("../images/drawers.jpg") no-repeat bottom left cover;
     width: 285px;
     height: 100%;
   }
