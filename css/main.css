@@ -11,6 +11,7 @@ body {
   font-size: 13px;
   font-family: 'Manrope', sans-serif;
   font-weight: 500;
+  letter-spacing: 0.12px;
 }
 
 main {
@@ -97,9 +98,15 @@ main {
 .card-title {
   color: #48556a;
   line-height: 28px;
-  letter-spacing: 0.25px;
-  font-size: 20px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
   font-weight: 700;
+}
+
+@media screen and (min-width: 500px) {
+  .card-title {
+    font-size: 20px;
+  }
 }
 
 .card-text {
@@ -119,7 +126,15 @@ main {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  margin: 20px auto;
+  margin-top: 52px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 500px) {
+  .card-footer {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
 }
 
 .card-footer-image {
@@ -142,6 +157,7 @@ main {
 
 .card-footer-info p:first-child {
   color: #48556a;
+  font-weight: 700;
 }
 
 .card-footer-info p:last-child {
@@ -166,6 +182,14 @@ main {
 
 .card-footer-share svg path {
   fill: #6d7f97;
+}
+
+.card-footer .icon-share-inverse-color {
+  background-color: #6d7f97;
+}
+
+.card-footer .icon-share-inverse-color svg path {
+  fill: #ecf2f8;
 }
 
 .content-footer {

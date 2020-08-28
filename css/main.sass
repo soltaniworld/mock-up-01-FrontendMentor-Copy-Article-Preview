@@ -25,6 +25,7 @@ body
     font-size: 13px
     font-family: 'Manrope', sans-serif
     font-weight: 500
+    letter-spacing: 0.12px
         
 // contains the main card, excluding the bottom credits footer
 main
@@ -78,9 +79,11 @@ main
     &-title
         color: $VeryDarkBlue
         line-height: 28px
-        letter-spacing: 0.25px
-        font-size: 20px
+        letter-spacing: 0.2px
+        font-size: 16px
         font-weight: 700
+        @include set-min-screen()
+            font-size: 20px
     &-text
         margin-top: 12px
         color: $DarkBlue
@@ -93,7 +96,11 @@ main
         grid-template-columns: 40px 1fr 32px
         align-items: center
         width: 100%
-        margin: 20px auto
+        margin-top: 52px
+        margin-bottom: 20px
+        @include set-min-screen()
+            margin-top: 16px
+            margin-bottom: 0
         &-image
             width: 40px
             height: 40px
@@ -108,6 +115,7 @@ main
             text-align: left
             p:first-child
                 color: $VeryDarkBlue
+                font-weight: 700
             p:last-child
                 color: $GrayishBlue
         &-share
@@ -121,6 +129,10 @@ main
             align-items: center
             svg path
                 fill: $DarkBlue
+        .icon-share-inverse-color
+            background-color: $DarkBlue
+            svg path 
+                fill: $LightGrayishBlue
 
 
 // This is the hidden social media buttons
