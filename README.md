@@ -1,18 +1,15 @@
 # Article-preview-component
-![](https://img.shields.io/github/license/alexcamachogz/Article-preview-component?style=for-the-badge)
-![](https://img.shields.io/github/stars/alexcamachogz/Article-preview-component?style=for-the-badge)
-![](https://img.shields.io/github/forks/alexcamachogz/Article-preview-component?style=for-the-badge)
 
 ## ✍🏻 Description
 This is a challenge from [Frontend-Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT).
 The purpose of this challenge is to improve my skills with CSS and JS. 
 
 ## 🚀 Getting Started
-Only you need download the project and open index.html. That's it.
+Only need download the project and open index.html and given assets to use in project. Must add own CSS, classes, and other containers to html to get required results.
 
 ## 🎨 Preview
 
-You can see the live result here → [Article Preview Component](https://alexcamachogz.github.io/Article-preview-component/)
+You can see the live result here → [Article Preview Component](https://mock-up-01-frontend-mentor-copy-article-preview-8l81w1ixy.vercel.app)
 
 <details>
     <summary>🖥 Desktop version</summary>
@@ -29,5 +26,5 @@ You can see the live result here → [Article Preview Component](https://alexcam
 ## 👩🏻‍💻 Technologies
 1. HTML
 2. CSS
-3. Stylus
+3. SASS
 4. JavaScript
