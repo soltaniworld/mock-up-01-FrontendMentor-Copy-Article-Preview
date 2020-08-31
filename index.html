@@ -8,48 +8,47 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<main>
-		<div class="card-container">
+		<div class="container">
 			<div class="card">
-				<div class="card-image"></div>
-				<div class="card-content">
-					<div class="card-title">
+				<div class="card__image"></div>
+				<div class="card__content">
+					<div class="card__title">
 						Shift the overall look and feel by adding these wonderful touches to furniture in your home
 					</div>
-					<div class="card-text">
+					<div class="card__text">
 						Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.
 					</div>
-					<div class="card-footer">
-							<div class="card-footer-image">
+					<div class="card-footer card-footer--normal">
+							<div class="card-footer__image">
 								<img src="./images/avatar-michelle.jpg" alt="Image-avatar">
 							</div>
-							<div class="card-footer-info">
-								<p>Michelle Appleton</p>
-								<p>28 Jun 2020</p>
+							<div class="card-footer__info">
+								<p class="card-footer__info-text">Michelle Appleton</p>
+								<p class="card-footer__info-text">28 Jun 2020</p>
 							</div>
-						<div class="card-footer-share">
-							<div class="card-footer-share--ligth" id="share-button">
-								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+						<div class="card-footer__share">
+							<div class="card-footer__share--ligth" id="share-button">
+								<svg class="card-footer__share-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill: #ffffff d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="content-footer" id="social-media">
+			
+			<div class="card-footer card-footer-dark" id="social-media">
 				<div class="social-media">
-					<span>SHARE</span>
-					<a href="#social-media"><img src="images\icon-facebook.svg" alt="facebook"></a>
-					<a href="#social-media"><img src="images\icon-twitter.svg" alt="twitter"></a>
-					<a href="#social-media"><img src="images\icon-pinterest.svg" alt="pinterest"></a>
+					<span class="social-media__label">SHARE</span>
+					<a href="#social-media" class="social-media__icons"><img src=".\images\icon-facebook.svg" alt="facebook"></a>
+					<a href="#social-media" class="social-media__icons"><img src=".\images\icon-twitter.svg" alt="twitter"></a>
+					<a href="#social-media" class="social-media__icons"><img src=".\images\icon-pinterest.svg" alt="pinterest"></a>
 				</div>
-				<div class="card-footer-share">
-					<div class="card-footer-share--dark" id="return-button">
-						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+				<div class="card-footer__share card-footer__share--dark">
+					<div class="card-footer__share--dark" id="return-button">
+						<svg class="card-footer__share-svg--dark" xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
 					</div>
 				</div>
 			</div>
 		</div>
-	</main>
+	</div>
 
 	<div class="attribution">
 		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
